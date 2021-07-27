@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Color Guesser</title>
+</head>
+<body id="body">
+    <div class="container">
+        <div class="game-title">
+            <h1>Color Guesser</h1>
+        </div>
+        <div class="rules">
+            <ul>
+                <li>Each question will have a rgb value in the form of "rgb( RED ,GREEN ,BLUE )".</li>
+                <li>All the values define the intensity of the respective color ranging from 0 to 255.</li>
+                <li>The player has to guess the correct color out of the four given random color boxes.</li>
+                <li>Correct Guess will give 1 point and incorrect guess will lead to deduction of 1 point.</li>
+                <li>To start the game, enter the duration (in seconds) for which the player wish to play and click Play !</li>
+            </ul>
+        </div>
+        <div>
+            <form name="startForm" action="game.html" onsubmit="return startGame()">
+                <input type="text" name="time-field" placeholder="Seconds">
+                <input type="submit" value="Play">
+            </form>
+        </div>
+    </div>
+</body>
+<script src="index-script.js"></script>
+</html>

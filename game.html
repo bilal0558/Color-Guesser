@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Color Guesser</title>
+</head>
+<body id="body">
+    <div class="container">
+        <div class="question">
+            <h1 id="rgb-question">rgb(255,241,156)</h1>
+        </div>
+        <div class="options">
+            <div class="option" id="0"></div>
+            <div class="option" id="1"></div>
+            <div class="option" id="2"></div>
+            <div class="option" id="3"></div>
+        </div>
+        <div class="hud">
+            <span>
+                Score :
+                <span id="score">0</span>
+            </span>
+            <span id="time"></span>
+            <button onclick="replay()">Replay</button>
+        </div>
+    </div>
+</body>
+<script src="game-script.js"></script>
+</html>
