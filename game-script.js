@@ -56,7 +56,7 @@ function checkAnswer(event){
     const id = event.target.id;
     if(id==rightAnswer){
         showCorrect();
-        scoreValue=scoreValue+1;
+        scoreValue=scoreValue+4;
     }
     else{
         showWrong();
